@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>학교 에너지·탄소 PoC</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">E</div><div><strong>학교 에너지</strong><span>시설 의사결정 PoC</span></div></div>
+      <nav aria-label="주 메뉴">
+        <button class="nav active" data-view="overview">◫ <span>관내 현황</span></button>
+        <button class="nav" data-view="priority">▥ <span>현장확인 순서</span></button>
+        <button class="nav" data-view="school">▤ <span>학교 상세</span></button>
+        <button class="nav" data-view="project">↗ <span>개선효과</span></button>
+        <button class="nav" data-view="quality">◇ <span>데이터 검증</span></button>
+        <button class="nav" data-view="education">☀ <span>교육용 화면</span></button>
+      </nav>
+      <div class="side-note"><span class="dot"></span> 합성 시연 데이터<br><small>실제 학교·배출계수 아님</small></div>
+    </aside>
+    <main class="content">
+      <header class="topbar">
+        <div><div class="eyebrow">강남·서초 교육지원청 · 실증 시나리오</div><h1 id="page-title">관내 에너지 현황</h1></div>
+        <div class="controls"><label for="year">기준연도</label><select id="year"><option>2026</option><option selected>2025</option><option>2024</option><option>2023</option><option>2022</option></select><div class="avatar">GS</div></div>
+      </header>
+      <div class="notice"><strong>DEMO</strong><span>화면의 학교명·주소·사용량·배출계수는 모두 합성값입니다. 불완전한 학교는 합계에서 제외합니다.</span></div>
+      <section id="view" aria-live="polite"></section>
+      <footer>학교 단위 데이터 연결 → 분석 → 현장 검토 → 사업효과 확인 · PoC v0.1</footer>
+    </main>
+  </div>
+  <script src="./snapshot.js" onerror="void 0"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
